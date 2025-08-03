@@ -1,0 +1,58 @@
+/* Variabili di tema */
+:root {
+  /* Light */
+  --bg: #ffffff;
+  --text: #212529;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --light-bg: #f8f9fa;
+
+  /* Dark */
+  --dark-bg: #212529;
+  --dark-text: #f8f9fa;
+  --dark-secondary: #adb5bd;
+}
+
+html[data-theme='light'] {
+  --bg-color: var(--bg);
+  --text-color: var(--text);
+  --section-bg: var(--light-bg);
+}
+
+html[data-theme='dark'] {
+  --bg-color: var(--dark-bg);
+  --text-color: var(--dark-text);
+  --section-bg: #343a40;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary) !important;
+}
+.navbar .btn-outline-light {
+  border-color: var(--text-color);
+}
+
+/* Sezioni */
+section {
+  scroll-margin-top: 70px;
+  background-color: var(--bg-color);
+}
+section.bg-light {
+  background-color: var(--section-bg) !important;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-bg);
+}
+footer a:hover {
+  text-decoration: underline;
+}
