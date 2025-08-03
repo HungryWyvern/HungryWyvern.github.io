@@ -30,11 +30,11 @@ function drawChart() {
   view = new google.visualization.DataView(dataTable);
   view.setColumns([0,1,2]);
   const options = {
-    title: 'Precisione del Lancio: Torre vs Mano',
+    // title: 'Precisione del Lancio: Torre vs Mano',
     curveType: 'function', legend: { position: 'bottom' },
     series: {0:{lineWidth:3,pointSize:6},1:{lineWidth:3,pointSize:6,lineDashStyle:[4,4]}},
     backgroundColor: 'transparent',
-    hAxis: { title: 'Mese' }, vAxis: { title: 'Scostamento (%)' }
+    hAxis: { title: 'N° lancio' }, vAxis: { title: 'Scostamento' }
   };
   chart = new google.visualization.LineChart(document.getElementById('line_chart'));
   google.visualization.events.addListener(chart, 'select', () => {
