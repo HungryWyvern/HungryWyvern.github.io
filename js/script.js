@@ -22,7 +22,7 @@ google.charts.setOnLoadCallback(drawChart);
 let chart, dataTable, view;
 function drawChart() {
   dataTable = google.visualization.arrayToDataTable([
-    ['Mese', 'Torre (%)', 'Mano (%)'],
+    ['Scostamento', 'Torre (%)', 'Mano (%)'],
     ['Gen', 10, 12], ['Feb', 14, 16], ['Mar', 8, 9],
     ['Apr', 12, 11], ['Mag', 15, 14], ['Giu', 9, 10]
   ]);
